@@ -24,4 +24,14 @@ describe('Resolve the String', () => {
         expect(resolveStr(testStr)).toEqual(expectResult)
     });
 
+    it('should get word&count and sort desc when given the word string', () => {
+        let testStr = `git remote add origin remote add add remote git remote remote remote remote`
+        let expectResult = [
+            { word: 'remote', count: 7 },
+            { word: 'add', count: 3 },
+            { word: 'git', count: 2 },
+            { word: 'origin', count: 1 }
+        ]
+        expect(resolveStr(testStr)).toEqual(expectResult)
+    });
 });
