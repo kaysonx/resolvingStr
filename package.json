@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/qspeng/resolvingStr/issues"
   },
-  "homepage": "https://github.com/qspeng/resolvingStr#readme"
+  "homepage": "https://github.com/qspeng/resolvingStr#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.2.2",
+    "babel-register": "^6.24.0"
+  }
 }
